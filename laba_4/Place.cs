@@ -165,6 +165,7 @@ namespace laba_4
         {
             InitializeComponent();
             this.CenterToScreen();
+            this.MaximizeBox = false;
             this.Font = new Font("Blackoak Std", 7, FontStyle.Bold);
             this.gameBoard = gameBoard;
             this.player = player;

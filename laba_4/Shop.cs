@@ -19,6 +19,7 @@ namespace laba_4
         {
             InitializeComponent();
             this.CenterToScreen();
+            this.MaximizeBox = false;
             label4.Text = $"{player.Coins}";
             this.player = player;
             //Загружаем картинки в зависимости от цвета игрока

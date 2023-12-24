@@ -190,9 +190,3 @@ namespace laba_3
         }
     }
 }
-
-
-
-
-
-

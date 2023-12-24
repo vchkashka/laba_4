@@ -20,6 +20,7 @@ namespace laba_4
         {
             InitializeComponent();
             this.CenterToScreen();
+            this.MaximizeBox = false;
             this.gameBoard = gameBoard;
         }
 

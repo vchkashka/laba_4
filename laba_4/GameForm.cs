@@ -37,6 +37,7 @@ namespace laba_4
         {
             InitializeComponent();
             this.CenterToScreen();
+            this.MaximizeBox = false;
             pictureBox1.Image = Image.FromFile("игроки.png");
         }
 

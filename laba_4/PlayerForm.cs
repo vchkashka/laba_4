@@ -20,6 +20,7 @@ namespace laba_4
         {
             InitializeComponent();
             this.CenterToScreen();
+            this.MaximizeBox = false;
             label2.Text = $"{player.Coins}";
             this.player = player;
             this.gameBoard = gameBoard;

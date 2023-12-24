@@ -20,11 +20,11 @@ namespace UnitTestProject
             Warrior warrior = new Warrior(Colors.green);
             warrior.CurrentPosition = new Position { X = 1, Y = 2 };
             players[0].AddUnit(warrior);
-            gameBoard.Board[warrior.CurrentPosition] = warrior;
+            gameBoard.Board[warrior.CurrentPosition] = players[0].Units[0];
             Archer archer = new Archer(Colors.red);            
             archer.CurrentPosition = new Position { X = 1, Y = 1 };
             players[1].AddUnit(archer);
-            gameBoard.Board[archer.CurrentPosition] = archer;
+            gameBoard.Board[archer.CurrentPosition] = players[1].Units[0];
             int expected = 30;
 
 
@@ -46,11 +46,11 @@ namespace UnitTestProject
             Warrior warrior = new Warrior(Colors.green);
             warrior.CurrentPosition = new Position { X = 1, Y = 1 };
             players[0].AddUnit(warrior);
-            gameBoard.Board[warrior.CurrentPosition] = warrior;
+            gameBoard.Board[warrior.CurrentPosition] = players[0].Units[0];
             Archer archer = new Archer(Colors.red);
             archer.CurrentPosition = new Position { X = 1, Y = 3 };
             players[1].AddUnit(archer);
-            gameBoard.Board[archer.CurrentPosition] = archer;
+            gameBoard.Board[archer.CurrentPosition] = players[1].Units[0];
 
             Position expected = new Position { X = 1, Y = 2 };
             warrior.Move(archer.CurrentPosition, gameBoard, players);
