@@ -37,7 +37,7 @@ namespace laba_4
         {
             InitializeComponent();
             this.CenterToScreen();
-            pictureBox1.Image = Image.FromFile("C:\\Users\\User\\Desktop\\игроки.png");
+            pictureBox1.Image = Image.FromFile("игроки.png");
         }
 
         private void button1_Click(object sender, EventArgs e)

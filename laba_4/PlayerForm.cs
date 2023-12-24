@@ -25,9 +25,9 @@ namespace laba_4
             this.gameBoard = gameBoard;
             //В зависимости от цвета игрока загружаем на форму картинку
             if (player.Color == Colors.green)
-                pictureBox1.Image = Image.FromFile("C:\\Users\\User\\Desktop\\игрок.png");
+                pictureBox1.Image = Image.FromFile("игрок.png");
             if (player.Color == Colors.red)
-                pictureBox1.Image = Image.FromFile("C:\\Users\\User\\Desktop\\игрок2.png");
+                pictureBox1.Image = Image.FromFile("игрок2.png");
         }
 
         //Покупка юнитов

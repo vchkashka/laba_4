@@ -52,9 +52,9 @@ namespace laba_4
                     {
 
                         if (gameBoard.Board[position].GetType().Name == "Archer")
-                            image = new Bitmap("C:\\Users\\User\\Desktop\\лучник.png");
+                            image = new Bitmap("лучник.png");
                         if (gameBoard.Board[position].GetType().Name == "Warrior")
-                            image = new Bitmap("C:\\Users\\User\\Desktop\\воин.png");
+                            image = new Bitmap("воин.png");
                         Image part = new Bitmap(50, 50);
                         Graphics g = Graphics.FromImage(part);
                         g.DrawImage(image, new Rectangle(0, 0, 58, 62), 0, 0, 85, 90, GraphicsUnit.Pixel);
@@ -65,9 +65,9 @@ namespace laba_4
                             if (gameBoard.Board[position].Color == Colors.red)
                     {
                         if (gameBoard.Board[position].GetType().Name == "Archer")
-                            image = new Bitmap("C:\\Users\\User\\Desktop\\лучник2.png");
+                            image = new Bitmap("лучник2.png");
                         if (gameBoard.Board[position].GetType().Name == "Warrior")
-                            image = new Bitmap("C:\\Users\\User\\Desktop\\воин2.png");
+                            image = new Bitmap("воин2.png");
                         Image part = new Bitmap(50, 50);
                         Graphics g = Graphics.FromImage(part);
                         g.DrawImage(image, new Rectangle(0, 0, 58, 62), 0, 0, 85, 90, GraphicsUnit.Pixel);

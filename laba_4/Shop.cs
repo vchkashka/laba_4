@@ -24,12 +24,12 @@ namespace laba_4
             //Загружаем картинки в зависимости от цвета игрока
             if (player.Color == Colors.green)
             {
-                System.Drawing.Image im = new Bitmap("C:\\Users\\User\\Desktop\\воин.png");
+                System.Drawing.Image im = new Bitmap("воин.png");
                 System.Drawing.Image part = new Bitmap(116, 124);
                 Graphics g = Graphics.FromImage(part);
                 g.DrawImage(im, new Rectangle(0, 0, 116, 124), 0, 0, 85,85, GraphicsUnit.Pixel);
                 pictureBox1.BackgroundImage = part;
-                System.Drawing.Image im2 = new Bitmap("C:\\Users\\User\\Desktop\\лучник.png");
+                System.Drawing.Image im2 = new Bitmap("лучник.png");
                 part = new Bitmap(116, 124);
                 g = Graphics.FromImage(part);
                 g.DrawImage(im2, new Rectangle(0, 0, 116, 124), 0, 0, 85, 85, GraphicsUnit.Pixel);
@@ -37,12 +37,12 @@ namespace laba_4
             }
             if (player.Color == Colors.red)
             {
-                System.Drawing.Image im = new Bitmap("C:\\Users\\User\\Desktop\\воин2.png");
+                System.Drawing.Image im = new Bitmap("воин2.png");
                 System.Drawing.Image part = new Bitmap(116, 124);
                 Graphics g = Graphics.FromImage(part);
                 g.DrawImage(im, new Rectangle(0, 0, 116, 124), 0, 0, 85, 85, GraphicsUnit.Pixel);
                 pictureBox1.BackgroundImage = part;
-                System.Drawing.Image im2 = new Bitmap("C:\\Users\\User\\Desktop\\лучник2.png");
+                System.Drawing.Image im2 = new Bitmap("лучник2.png");
                 part = new Bitmap(116, 124);
                 g = Graphics.FromImage(part);
                 g.DrawImage(im2, new Rectangle(0, 0, 116, 124), 0, 0, 85, 85, GraphicsUnit.Pixel);

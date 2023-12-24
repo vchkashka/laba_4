@@ -41,8 +41,8 @@ namespace laba_3
             State = true;
             switch (color)
             {
-                case Colors.red: Image = new Bitmap("C:\\Users\\User\\Desktop\\воин2.png"); break;
-                case Colors.green: Image = new Bitmap("C:\\Users\\User\\Desktop\\воин.png"); break;
+                case Colors.red: Image = new Bitmap("воин2.png"); break;
+                case Colors.green: Image = new Bitmap("воин.png"); break;
             }
         }
 
@@ -124,8 +124,8 @@ namespace laba_3
             State = true;
             switch (color)
             {
-                case Colors.red: Image = new Bitmap("C:\\Users\\User\\Desktop\\лучник2.png"); break;
-                case Colors.green: Image = new Bitmap("C:\\Users\\User\\Desktop\\лучник.png"); break;
+                case Colors.red: Image = new Bitmap("лучник2.png"); break;
+                case Colors.green: Image = new Bitmap("лучник.png"); break;
             }
         }
         public override void Attack(UnitBase target, GameBoard gameBoard, List<Player> players)
