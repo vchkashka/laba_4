@@ -72,22 +72,5 @@ namespace laba_3
                 units.RemoveAt(i - 1);
             }
         }
-
-        public UnitBase this[int index]
-        {
-            get
-            {
-                if (index >= 0 && index < units.Count)
-                    return units[index];
-                else
-                    throw new Exception("Введен некорректный индекс");
-            }
-            set
-            {
-                if (index >= 0 && index < units.Count)
-                    units[index] = value;
-            }
-        }
-
     }
 }
