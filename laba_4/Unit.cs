@@ -13,7 +13,6 @@ namespace laba_3
     [Serializable]
     public abstract class UnitBase
     {
-        public Image Image { get; set; }//Изображение юнита
         public int Health { get; set; }//Здоровье юнита
         public int AttackDamage { get; set; }//Урон от атаки юнита
         public int MaxAttackRange { get; set; }//Максимальная дальность атаки
@@ -38,12 +37,7 @@ namespace laba_3
             MaxAttackRange = 1;
             Color = color;
             Cost = 2;
-            State = true;
-            switch (color)
-            {
-                case Colors.red: Image = new Bitmap("воин2.png"); break;
-                case Colors.green: Image = new Bitmap("воин.png"); break;
-            }
+            State = true;            
         }
 
         // Реализация метода атаки для Воина
@@ -121,12 +115,7 @@ namespace laba_3
             MaxAttackRange = 4;
             this.Color = color;
             Cost = 4;
-            State = true;
-            switch (color)
-            {
-                case Colors.red: Image = new Bitmap("лучник2.png"); break;
-                case Colors.green: Image = new Bitmap("лучник.png"); break;
-            }
+            State = true;            
         }
         public override void Attack(UnitBase target, GameBoard gameBoard, List<Player> players)
         {

@@ -59,7 +59,6 @@ namespace laba_3
         public void RemoveUnit(UnitBase unit) // продать
         {
             coins += unit.Cost / 2; // Получаем половину стоимости юнита при продаже
-            unit.Image = null;
             units.Remove(unit);
         }
 

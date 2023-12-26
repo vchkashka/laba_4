@@ -50,7 +50,11 @@ namespace laba_4
                             foreach (UnitBase unit in player.Units)
                                 if (unit.CurrentPosition != null && unit.CurrentPosition.X == h && unit.CurrentPosition.Y == j)
                                 {
-                                    image = unit.Image;
+                                    switch (unit.Color)
+                                    {
+                                        case Colors.red: image = new Bitmap("лучник2.png"); break;
+                                        case Colors.green: image = new Bitmap("лучник.png"); break;
+                                    }
                                     System.Drawing.Image part = new Bitmap(50, 50);
                                     Graphics g = Graphics.FromImage(part);
                                     g.DrawImage(image, new Rectangle(0, 0, 58, 62), 0, 0, 85, 90, GraphicsUnit.Pixel);
@@ -117,6 +121,7 @@ namespace laba_4
                                 player.RemoveUnit(unit1);
                             }
                         }
+
                     }
 
                 }

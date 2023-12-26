@@ -30,7 +30,11 @@ namespace laba_4
             for (int i = 0; i < player.Units.Count; i++)
             {
                 //Кнопки
-                image = player.Units[i].Image;
+                switch (player.Units[i].Color)
+                {
+                    case Colors.red: image = new Bitmap("лучник2.png"); break;
+                    case Colors.green: image = new Bitmap("лучник.png"); break;
+                }
                 Button butt = new Button();
                 butt.Size = new Size(50, 50);
                 butt.Location = new Point(0, i * 50 + 30);

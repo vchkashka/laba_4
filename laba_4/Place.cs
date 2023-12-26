@@ -32,7 +32,11 @@ namespace laba_4
                 if (player.Units[i].CurrentPosition == null)
                 {
                     //Создаем кнопку
-                    image = player.Units[i].Image;//Изображение юнита
+                    switch (player.Units[i].Color)
+                    {
+                        case Colors.red: image = new Bitmap("лучник2.png"); break;
+                        case Colors.green: image = new Bitmap("лучник.png"); break;
+                    }
                     Button butt = new Button();
                     butt.Size = new Size(50, 50);
                     butt.Location = new Point(470, i * 50);
@@ -60,7 +64,11 @@ namespace laba_4
                     Button butt = new Button();
                     butt.Size = new Size(50, 50);
                     butt.BackColor = Color.White;
-                    image = player.Units[i].Image;
+                    switch (player.Units[i].Color)
+                    {
+                        case Colors.red: image = new Bitmap("лучник2.png"); break;
+                        case Colors.green: image = new Bitmap("лучник.png"); break;
+                    }
                     butt.Location = new Point(player.Units[i].CurrentPosition.X * 50, player.Units[i].CurrentPosition.Y * 50);
                     Image part = new Bitmap(50, 50);
                     Graphics g = Graphics.FromImage(part);
